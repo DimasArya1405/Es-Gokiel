@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ES-GOKIEL</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand text-white" href="#">ES-GO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#home">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#tentang-kami">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#produk">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="home-section py-5" id="home">
+      <div class="container">
+        <div class="row align-items-center text-center text-lg-left absolute">
+          <!-- Bagian Kiri -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h1 class="display-4">Segarnya Minuman Es</h1>
+            <p class="lead">Selamat datang di Es Gokiel, destinasi terbaik untuk minuman es yang menyegarkan. Temukan favorit Anda dari berbagai pilihan es teh, kopi, es buah, dan banyak lagi. Segarkan hari Anda bersama kami!</p>
+            <a href="#produk" class="btn btn-lg buton-produk">Lihat Produk</a>
+          </div>
+          <!-- Bagian Kanan -->
+          <div class="col-lg-6 foto-home">
+            <img src="assets/bg-ice-removebg-preview.png" alt="Minuman Es" class="img-fluid rounded" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang-kami" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center text-center text-lg-left">
+          <!-- Bagian Kiri -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="display-4">Tentang Kami</h2>
+            <p class="lead">Kami adalah penyedia minuman es berkualitas tinggi yang berkomitmen untuk memberikan kesegaran dan kenikmatIDR Anda.</p>
+            <p class="lead">Tim kami berdedikasi untuk selalu berinovasi dan menghadirkan produk-produk baru yang menarik dan lezat. Kami percaya bahwa minuman es yang baik dapat membuat setiap momen menjadi lebih spesial.</p>
+          </div>
+          <!-- Bagian Kanan -->
+          <div class="col-lg-6">
+            <img src="assets/aboit.png" alt="Tentang Kami" class="img-fluid rounded" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="produk bg-light" id="produk">
+      <div class="container">
+        <div class="row align-items-center text-center">
+          <div class="col-lg-12 mb-4 mb-lg-0">
+            <h2 class="display-4">Produk Kami</h2>
+            <p class="lead">
+              Nikmati berbagai pilihan minuman es yang menyegarkan dari koleksi terbaik kami. Temukan es teh, es kopi, smoothie, dan minuman cokelat yang akan memanjakan lidah Anda. Hanya menggunakan bahan-bahan berkualitas tinggi, kami
+              menghadirkan kesegaran dalam setiap tegukan.
+            </p>
+          </div>
+        </div>
+
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1">
+          <div class="col">
+            <div class="card primer">
+              <img src="assets/es-buah.jpeg" class="img-fluid" alt="Minuman Es" />
+              <div class="card-body">
+                <h5 class="card-title">Es Buah</h5>
+                <p class="card-text text-danger">IDR 10.000</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <div class="nex">(4.5/5)</div>
+                </div>
+                <a href="#" class="btn buton tombol-es-buah" id="es-buah" data-bs-toggle="modal" data-bs-target="#modal-es-campur">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card primer">
+              <img src="assets/es-kuwut.jpeg" class="img-fluid" alt="Minuman Es" />
+              <div class="card-body">
+                <h5 class="card-title">Es Kuwut</h5>
+                <p class="card-text text-danger">IDR 5.000</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <div class="nex">(4.5/5)</div>
+                </div>
+                <a href="#" class="btn buton" data-bs-toggle="modal" data-bs-target="#modal-es-kuwut">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card primer">
+              <img src="assets/es-campur-removebg-preview.png" class="img-fluid" alt="Minuman Es" />
+              <div class="card-body">
+                <h5 class="card-title">Es Campur</h5>
+                <p class="card-text text-danger">IDR 7.000</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <div class="nex">(5/5)</div>
+                </div>
+                <a href="#" class="btn buton" data-bs-toggle="modal" data-bs-target="#modal-es-buah">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/es-soda-susu.jpeg" class="img-fluid" alt="Minuman Es" />
+              <div class="card-body">
+                <h5 class="card-title">Es Soda Susu</h5>
+                <p class="card-text text-danger">IDR 4.000</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <div class="nex">(3/5)</div>
+                </div>
+                <a href="#" class="btn buton" data-bs-toggle="modal" data-bs-target="#modal-es-soda-susu">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/kopi.jpeg" class="img-fluid" alt="Minuman Es" />
+              <div class="card-body">
+                <h5 class="card-title">Kopi</h5>
+                <p class="card-text text-danger">IDR 3.000</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <div class="nex">(4/5)</div>
+                </div>
+                <a href="#" class="btn buton" data-bs-toggle="modal" data-bs-target="#modal-kopi">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/susu.jpeg" class="img-fluid" alt="Minuman Es" />
+              <div class="card-body">
+                <h5 class="card-title">Susu</h5>
+                <p class="card-text text-danger">IDR 3.000</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <div class="nex">(3/5)</div>
+                </div>
+                <a href="#" class="btn buton" data-bs-toggle="modal" data-bs-target="#modal-susu">Lihat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section id="testimonials" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center text-center">
+          <div class="col-lg-12">
+            <h2 class="display-4">Testimonials</h2>
+            <p class="lead" style="margin-bottom: 5rem">Berikut adalah beberapa testimonial dari pelanggan-pelanggan kami yang sudah mencoba segarnya Es Gokiel</p>
+          </div>
+        </div>
+        <div class="row w-100 testimon row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 baris=tes" style="margin-top: 2rem">
+          <div class="col tes-kartu">
+            <center>
+              <h2>Tian</h2>
+              <p class="lead">(Pelajar)</p>
+              <img src="assets/tian.jpg" class="card-img-top" alt="..." />
+              <div class="panah"><i class="bi bi-triangle"></i></div>
+            </center>
+
+            <div class="card">
+              <div class="card-body tes-des">
+                <p class="card-text">Minuman nya sangat segar, Es Kuwut nya enak dan juga harganya terjangkau. Sesuai untuk pelajar saat pulang sekolah.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col tes-kartu">
+            <center>
+              <h2>Indra Jaya</h2>
+              <p class="lead">(Pekerja)</p>
+              <img src="assets/indra.jpg" class="card-img-top" alt="..." />
+              <div class="panah"><i class="bi bi-triangle"></i></div>
+            </center>
+            <div class="card">
+              <div class="card-body tes-des">
+                <p class="card-text">Kopi nya sangat nikmat dan pas dihidangkan untuk menemani pekerjaan saya sehari-hari.</p>
+              </div>
+            </div>
+          </div>
+          <center>
+            <div class="col tes-kartu">
+              <center>
+                <h2>Ilyas</h2>
+                <p class="lead">(Gamers)</p>
+                <img src="assets/Screenshot 2024-07-30 100618.png" class="card-img-top" alt="..." />
+                <div class="panah"><i class="bi bi-triangle"></i></div>
+              </center>
+              <div class="card">
+                <div class="card-body tes-des">
+                  <p class="card-text">Es campur sangat enak dan harganya terjangkau. Cocok buat nemenin main game.</p>
+                </div>
+              </div>
+            </div>
+          </center>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center text-center">
+          <div class="col-lg-12">
+            <h2 class="display-4">Kontak Kami</h2>
+            <p class="lead">Jika ada pertanyaan atau ingin bertanya tentang produk kami, silahkan hubungi kami melalui email di bawah ini.</p>
+          </div>
+        </div>
+        <div class="row align-items-center ktk">
+          <div class="col-lg-5 col-sm-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1261.0936420377946!2d109.26876923418902!3d-7.656962848517492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6540cf4b6d515f%3A0xa0b2212d1ea2ff0f!2sWarung%20Mamake%20(Soto)!5e0!3m2!1sid!2sid!4v1722183395483!5m2!1sid!2sid"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-lg-5">
+            <form>
+              <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" class="form-control" id="name" placeholder="Masukkan Nama Anda" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan Email Anda" />
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Masukkan Pesan Anda"></textarea>
+              </div>
+              <button type="submit" class="btn butonc text-white">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <center>
+      <div class="navigasi-footer">
+
+          <a href="#home">Beranda</a>
+          <a href="#tentang-kami">Tentang Kami</a>
+          <a href="#produk">Produk</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Kontak</a>
+
+      </div>
+
+      <div class="sosmed">
+
+          <a href="https://api.whatsapp.com/send?phone=6281393282418" target="_blank" ><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.instagram.com/dmzzy_ar5/?igsh=eWl6d2wwODZ4Z2R0" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/@dimas_arya.n" target="_blank"><i class="bi bi-tiktok"></i></a>
+          <a href="https://github.com/DimasArya1405" target="_blank"><i class="bi bi-github"></i></a>
+
+      </div>
+      <div class="ngisor">
+        <p>© 2024 Dimas Arya Nugraha. All rights reserved.</p>
+      </div>
+    </center>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-es-campur" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Es Buah</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-5">
+                <center>
+                <img src="assets/es-buah.jpeg" class="img-fluid" alt="" />
+                </center>
+              </div>
+              <div class="col">
+                <p>Es Sop Buah adalah minuman segar yang terdiri dari berbagai macam buah-buahan potong, sirup manis, susu, dan es batu. Cocok untuk hari panas, minuman ini kaya vitamin dan nutrisi dari buah segar.</p>
+                <p class="card-text text-danger">IDR 10.000</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <div class="nex">(4.5/5)</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary d-flex align-items-center justify-content-center tombol-cart">
+                <i class="bi bi-cart2 me-2"></i>
+                Beli
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-es-kuwut" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Es Kuwut</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-5">
+                <center>
+                <img src="assets/es-kuwut.jpeg" class="img-fluid" alt="" />
+                </center>
+              </div>
+              <div class="col">
+                <p>
+                  Es Kuwut adalah minuman segar khas Bali yang terbuat dari campuran kelapa muda, melon, biji selasih, jeruk nipis, dan sirup melon. Minuman ini disajikan dengan es batu, memberikan sensasi menyegarkan yang sempurna untuk
+                  mengatasi panas.
+                </p>
+                <p class="card-text text-danger">IDR 5.000</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <div class="nex">(4.5/5)</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary d-flex align-items-center justify-content-center tombol-cart">
+                <i class="bi bi-cart2 me-2"></i>
+                Beli
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-es-buah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Es Campur</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-5">
+                <center>
+                <img src="assets/es-campur-removebg-preview.png" class="img-fluid" alt="" />
+              </center>
+              </div>
+              <div class="col">
+                <p>
+                  Es Campur adalah minuman tradisional Indonesia yang terdiri dari campuran berbagai bahan seperti cincau, kelapa muda, kolang-kaling, alpukat, nangka, dan tape, disiram dengan sirup manis, susu kental manis, dan es serut.
+                </p>
+                <p class="card-text text-danger">IDR 7.000</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <div class="nex">(5/5)</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary d-flex align-items-center justify-content-center tombol-cart">
+                <i class="bi bi-cart2 me-2"></i>
+                Beli
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-es-soda-susu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Es Soda Susu</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-5"><center>
+                <img src="assets/es-soda-susu.jpeg" class="img-fluid" alt="" />
+              </center>
+              </div>
+              <div class="col">
+                <p>Soda Susu adalah minuman segar yang terbuat dari campuran susu kental manis dan soda berkarbonasi. Minuman ini menawarkan rasa manis dan berkarbonasi yang menyegarkan.</p>
+                <p class="card-text text-danger">IDR 4.000</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <div class="nex">(3/5)</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary d-flex align-items-center justify-content-center tombol-cart">
+                <i class="bi bi-cart2 me-2"></i>
+                Beli
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-kopi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Kopi</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-5"><center>
+                <img src="assets/kopi.jpeg" class="img-fluid" alt="" />
+              </center>
+              </div>
+              <div class="col">
+                <p>
+                  Kopi adalah minuman yang terbuat dari biji kopi yang diseduh dengan air panas. Minuman ini memiliki rasa yang kaya dan beragam, mulai dari pahit hingga manis, tergantung pada jenis biji kopi dan metode penyeduhan. Kopi
+                  sering dinikmati untuk meningkatkan energi dan fokus.
+                </p>
+                <p class="card-text text-danger">IDR 3.000</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <div class="nex">(3/5)</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary d-flex align-items-center justify-content-center tombol-cart">
+                <i class="bi bi-cart2 me-2"></i>
+                Beli
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-susu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Susu</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-5"><center>
+                <img src="assets/susu.jpeg" class="img-fluid" alt="" />
+              </center>
+              </div>
+              <div class="col">
+                <p>Susu adalah minuman bergizi yang diperoleh dari hewan seperti sapi, kambing, atau dari sumber nabati seperti almond dan kedelai. Kaya akan kalsium, protein, dan vitamin D</p>
+                <p class="card-text text-danger">IDR 4.000</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                  <div class="nex">(3.5/5)</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary d-flex align-items-center justify-content-center tombol-cart">
+                <i class="bi bi-cart2 me-2"></i>
+                Beli
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

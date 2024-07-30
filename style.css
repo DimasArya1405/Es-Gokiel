@@ -1,0 +1,331 @@
+:root{
+    --primary-color: rgb(36, 109, 255);
+    --secondary-color: rgb(162, 80, 255);
+}
+*{
+    scroll-behavior:smooth;
+}
+
+nav{
+    background-image: linear-gradient( to right, var(--primary-color), var(--secondary-color));
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    box-shadow: 2px 2px 10px black;
+}
+
+.nav-link {
+    position: relative;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* Custom styles for the home section */
+.home-section {
+    margin-top: 3rem !important;
+    background-color: #f8f9fa; /* Light background color for contrast */
+    padding: 3rem 0;
+}
+.foto-home img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50rem;
+    height: 10rem;
+    background-image: linear-gradient( to right, var(--primary-color), var(--secondary-color));
+}
+
+.home-section h1 {
+    font-size: 3rem;
+    color: #343a40; /* Darker color for the text */
+    margin-bottom: 1rem;
+}
+
+.home-section p {
+    font-size: 1.25rem;
+    color: #6c757d; /* Lighter color for the description */
+    margin-bottom: 2rem;
+}
+
+.home-section .buton-produk {
+    background-image: linear-gradient( to right, var(--primary-color), var(--secondary-color));
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    color:white;
+    font-weight: 500;
+}
+
+.home-section .buton-produk:hover,
+.card .buton:hover {
+    background-image: linear-gradient( to right, var(--secondary-color), var(--primary-color));
+    text-decoration: none;
+    color:rgb(193, 193, 193);
+}
+.card{
+    box-shadow: 2px 2px 5px rgb(75, 75, 75);
+    margin-bottom: 2rem;
+    border-radius: 15px !important;
+    overflow: hidden;
+}
+.lead{
+    margin-bottom: 2rem !important;
+}
+.rating{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    color:rgb(255, 230, 0)
+}
+.rating i{
+    filter: drop-shadow(1px 1px 1px black);
+}
+.nex{
+    color:black;
+}
+.card .buton{
+    background-image: linear-gradient( to right, var(--primary-color), var(--secondary-color));
+    transition: background-image 0.3s !important;
+    color:white;
+    width: 6rem !important;
+    font-weight: 500 !important;
+    border-radius: 10px;
+}
+.primer{
+    position: relative;
+}
+.primer::after{
+    content: 'BEST SELLER';
+    position: absolute;
+    font-weight: 500;
+    top: 0;
+    right: 0;
+    height: 1.8rem;
+    width: 8rem;
+    background-image: linear-gradient( to right, var(--primary-color), var(--secondary-color));
+    z-index: 1;
+    color:yellow;
+    text-align: center;
+    border-radius: 0 0 0 10px;
+}
+.ktk{
+    justify-content: space-around;
+    background-image: linear-gradient( to right, var(--primary-color), var(--secondary-color));
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+.butonc {
+    width: 6rem;
+    color: white;
+    border-radius: 10px !important;
+    background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    transition: background-image 0.5s ease, color 0.5s ease !important; 
+    font-weight: 500 !important;
+    border:1px solid rgb(255, 255, 255) !important;
+}
+
+.butonc:hover {
+    background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    color: rgb(194, 194, 194) !important;
+}
+form{
+    color:white;
+}
+iframe{
+    border-radius: 20px;
+}
+
+.modala{
+    display: flex;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: AUTO;
+        background-color: rgba(0,0,0,0.5);
+        transform: scale(0);
+        transition:0.4s;
+}
+.modala.active{
+    display: flex;
+        transform: scale(1);
+}
+.modala-cone{
+    position: relative;
+        background-color: #fefefe;
+        color:black;
+        margin: 15% auto;
+        border: 1px solid black;
+        width: 80%;
+        padding: 2rem 1rem;
+
+}
+.modala .modala-cone .modala-content .produk-cone .item-price
+    {
+        color:red;
+        font-size: 1rem;
+        margin-top: -1rem;
+    }
+    .modala-content{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .modala-content img{
+        height: 9rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+
+    }
+    .modala-content a{
+        display: flex;
+        gap: 1rem;
+        width: 10rem;
+        background-image: linear-gradient( to right, var(--primary-color), var(--secondary-color));
+        color:rgb(255, 255, 255);
+        margin-top: 5px;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+    }
+    .produk-cone{
+        margin-top: -0.5rem;
+        border-left: 1px solid black;
+        padding-left: 1rem;
+    }
+    .tombol-cart {
+        display: flex;
+        align-items: center;
+        /* background-image: linear-gradient( to right, var(--primary-color), var(--secondary-color));
+        color: white !important; */
+      }
+      
+      .tombol-cart i {
+        margin-right: 8px; /* Adjust spacing between the icon and text as needed */
+      }
+    .modala-content p{
+        font-size: 1rem ;
+        line-height: 1.5;
+    }
+    .modala-cone .ikon-tutup{
+        margin-top: -2rem;
+        position: absolute;
+        right:1rem;
+        font-size: 2rem;
+    }
+    .testimon{
+        background-color: #f7f7f7;
+    }
+    .testimon .col img{
+        border-radius: 50%;
+        width: 10rem;
+        box-shadow: 1px 1px 15px black;
+    }
+    .panah{
+        font-size: 2rem;
+        margin-top: 1rem;
+        color:rgb(128, 128, 128);
+    }
+    .tes-kartu{
+        
+        border-bottom: 1px solid rgb(128, 128, 128);
+        padding-bottom: 5px;
+    }
+    footer{
+        background-image: linear-gradient( to right, var(--primary-color), var(--secondary-color));
+        color: white;
+        height: 10rem;
+        padding-top: 2rem;
+    }
+    footer a {
+        color: white;
+        padding: 8px;
+        border: 1px solid transparent; /* Tambahkan border default */
+        border-radius: 10px;
+        transition: color 0.2s ease-in-out, border 0.2s ease-in-out; /* Tambahkan transisi untuk border-color */
+    }
+    
+    footer a:hover {
+        border:1px solid white; /* Ganti border-color saat hover */
+        color: rgb(171, 171, 171);
+        text-decoration: none;
+    }
+    
+    /* footer a{
+        color: white;
+        padding:8px;
+        border-radius: 10px;
+        transition: border 2s ease-in-out;
+    }
+    footer a:hover{
+        border:1px solid white;
+        color:rgb(171, 171, 171);
+        text-decoration: none;
+        transition: 2s;
+    } */
+    .navigasi-footer a{
+        margin: 0 0.5rem;
+    }
+    .navigasi-footer{
+        margin-bottom: 2rem;
+    }
+    .sosmed{
+        margin-bottom: 0.5rem;
+    }
+    .sosmed a{
+        margin: 0 0.2rem;
+    }
+    @media (max-width: 992px) {
+        .baris-tes .col:nth-child(3) {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+      }
+      
+
+
+@media (max-width: 1024px) {
+    .ktk{
+        padding:2rem 1rem;
+    }
+}
+@media (max-width: 768px){
+    .modala-content{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+.panah, .tes-kartu .card{
+    animation: bounce 2s infinite;
+}
